@@ -1,0 +1,95 @@
+body {
+  background: linear-gradient(94deg, #142850, #00909e);
+  padding: 0;
+  margin: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.main_container {
+  max-width: 50%;
+  margin: 0 auto;
+  padding: 70px 0 0;
+}
+
+.TodoList_header {
+  padding-bottom: 30px;
+  color: white;
+}
+
+.TodoList_header h1 {
+  font-size: 48px;
+  font-family: serif;
+}
+
+.TodoList_input {
+  margin-bottom: 30px;
+}
+
+.TodoList_input input {
+  height: 50px;
+}
+
+.TodoList_items ul {
+  padding: 0;
+  list-style: none;
+}
+
+.TodoList_items ul * {
+  color: white;
+  font-size: 18px;
+}
+
+.TodoList_items ul > li {
+  padding: 10px 0px 10px 20px;
+  margin: 10px 0;
+  background: #00000066;
+  border-radius: 10px;
+}
+
+.TodoList_items ul > li p {
+  font-family: serif;
+  margin: 0;
+}
+
+.TodoList_items ul .row {
+  align-items: center;
+}
+
+
+
+@media(max-width:1024px){
+  .main_container {
+    max-width: 768px;
+  }
+}
+
+@media(max-width:768px){
+  .main_container {
+    max-width: 90%;
+  }
+}
+
+@media(max-width:700px){
+  .main_container {
+    max-width: 95%;
+  }
+  .TodoList_items ul > li .btn {
+    font-size: 10px;
+    padding: 5px;
+  }
+}
+
+@media(max-width:480px){
+  .TodoList_items ul > li .col-9 {
+    width: 100%;
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+
+  .TodoList_items ul .row {
+    justify-content: end;
+  }
+}
